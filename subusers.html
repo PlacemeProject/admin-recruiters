@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="top-nav.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="side-nav.css">
+    <link rel="stylesheet" href="side-nav-1.css">
+    <link rel="stylesheet" href="side-nav-2.css">
+    <link rel="stylesheet" href="side-nav-3.css">
+    <link rel="stylesheet" href="side-nav-4.css">
+    <link rel="stylesheet" href="side-nav-5.css">
+
+    <link rel="stylesheet" href="post-left.css">
+    <link rel="stylesheet" href="post-right.css">
+    <link rel="stylesheet" href="post-filter-mobile.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="jobTable.css">
+    <link rel="stylesheet" href="ribbon.css">
+    <!-- <link rel="stylesheet" href="jobs.css"> -->
+    <script defer src="post.js"></script>
+    <script defer src="nav.js"></script>
+    <script defer src="jobTable.js"></script>
+    <title>Recruiter</title>
+    <style>
+        *{
+            font-size: 14px;
+        }
+        .INR{
+            font-family: cursive;
+        }
+        .r-down-main {
+        right: 50px;
+        height: auto;
+        width: 100%;
+        padding-right: 10px;
+        /* background-color: bisque; */
+        /* background-color: #fff; */
+        border-radius: 10px;
+        /* padding-top: 20px; */
+        /* padding-left: 20px; */
+    }
+    </style>
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="parent" id="parent">
+        <div class="r-left">
+            <nav class="left-nav">
+                <div class="nav-div">
+                    <a href="#" class="active" id="close-menu"><i class="fa-solid fa-chevron-left"></i>Collapse</a>
+                </div>
+                <div class="nav-div-hide">
+                    <a href="#" class="active" id="open-menu"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </nav>
+            
+            <div class="left-down">
+                <div class="l-box-div">
+                    <div class="box-1">
+                        <a href="#">
+                            <div class="p">
+                                <i class="fa-solid fa-suitcase"></i> <p>Post or job </p> 
+                            </div>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </a>
+                        
+                    </div>
+                    <div class="box-1-hide">
+                        <a href="#">
+                            <i class="fa-solid fa-suitcase"></i> 
+                        </a>
+                    </div>
+
+                    <div class="box-1">
+                        <a href="#">
+                            <div class="p">
+                                <i class="fa-regular fa-id-card"></i> <p>Canditates</p>  
+                            </div>
+                            <i class="fa-solid fa-caret-right"></i>                         
+                        </a>
+                        
+                    </div>
+                    <div class="box-1-hide">
+                        <a href="#">
+                            <i class="fa-regular fa-id-card"></i>
+                        </a>
+                    </div>
+
+                    <div class="box-1">
+                        <a href="#">
+                            <div class="p">
+                                <i class="fa-solid fa-magnifying-glass-location"></i> <p>Open search</p>
+                            </div>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </a>
+                        
+                    </div>
+                    <div class="box-1-hide">
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass-location"></i> 
+                        </a>
+                    </div>
+                    
+
+                    <div class="box-1">
+                        <a href="#">
+                            <div class="p">
+                                <i class="fa-solid fa-building-user"></i> <p>On Boarding</p>
+                            </div>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </a>
+                        
+                    </div>
+                    <div class="box-1-hide">
+                        <a href="#">
+                            <i class="fa-solid fa-building-user"></i> 
+                        </a>
+                    </div>
+
+                    <div class="box-1">
+                        <a href="#" style="background-color: #fff;">
+                            <div class="p" style="color: black;">
+                                <i class="fa-solid fa-user-pen" style="color: black;"></i> <p>Admin control</p>
+                            </div>
+                            <i class="fa-solid fa-caret-right" style="color: black;"></i>
+                        </a>
+                        
+                    </div>
+                    <div class="box-1-hide">
+                        <a href="#">
+                            <i class="fa-solid fa-user-pen"></i> 
+                        </a>
+                    </div>
+
+                    <div class="box-1">
+                        <a href="#">
+                            <div class="p">
+                                <i class="fa-solid fa-users-gear"></i> <p>empolyee info</p>
+                            </div>
+                            <i class="fa-solid fa-caret-right"></i>
+                        </a>
+                        
+                    </div>
+                    <div class="box-1-hide">
+                        <a href="#">
+                            <i class="fa-solid fa-users-gear"></i> 
+                        </a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+        <div class="r-right">
+            <header class="header">
+                <div class="navbar">
+                    <nav>
+                        <ul class="menu">
+                            <div class="logo-div">
+                                <li class="logo">
+                                    
+                                    <img src="logo.svg" alt="Placenow Logo" style="height: 20px; margin-left:50px;">
+                                </li>
+                                
+                                
+                                
+                                
+                            </div>
+                            <div class="last-div">
+                                <!-- <div class="item">
+                                    <li><a href="{% url 'job_seeker:profile' %}"><i class="fa-solid fa-bell"></i>Notifications</a></li>
+                                </div> -->
+                                <div class="item-div-1">
+                                    <li class="item button">
+                                        <a href="#" ><i class="fa-solid fa-building"></i>
+                                            <div class="nav-company">
+                                                <p class="nav-company-text-1">Recruiter Company name</p>
+                                                <p class="nav-company-text-2">Placeme private limited</p>
+                                            </div>
+                                            
+                                        </a>
+                                        
+                                    </li>
+                                </div>
+                                <div class="item-div">
+                                    <li class="item button"><a href="#"><i class="fa-solid fa-bell"></i> 
+                                        Notifications</a></li>
+                                </div>
+                                <div class="item-div">
+                                    <li class="item button"><a href="{% url 'job_seeker:profile' %}"><i class="fa-solid fa-user"></i> 
+                                        Profile</a></li>
+                                </div>
+                                
+                                
+                                
+                            </div>
+                            <div class="item-div-menu" >
+                                <li class="item button">
+                                    <a>
+                                        <div id="mobile-menu-open" style="display: flex;">
+                                        <i class="fa-solid fa-user"style="font-size:26px;display: block;"> </i>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+
+                                        <i class="fa-solid fa-xmark" id="mobile-menu-close"></i>
+                                    </a>
+                                </li>
+                            </div>
+                            
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+
+
+            <div class="r-right-down">
+                <div class="r-right-menu" id="mobile-menu-box">
+                    <div class="box-1-menu">
+                        <a href="#">
+                            <p>Recruiter Company name</p>
+                        </a>
+                    </div>
+                    <div class="box-2-menu">
+                        <a href="#">
+                            <!-- <i class="fa-solid fa-bell"></i>  -->
+                            <p>Notifications</p></a>
+                    </div>
+                    <div class="box-3-menu">
+                        <a href="#">
+                            <!-- <i class="fa-solid fa-user"></i>  -->
+                            <p>profile</p>
+                        </a>
+                    </div>
+                </div>
+                
+<!-- content in django -->
+                <div class="r-right-down-main">
+                <div class="r-down-main">
+                    <div class="list-main">
+                        <!-- <div class="list-left">
+                            
+                            <div class="form">
+                                <form method="post" action="#">
+                                    <div class="filters-div">
+                                        <i class="fa-solid fa-arrow-down-wide-short"></i>
+                                        <h1>Filters</h1>
+                                    </div>
+                                    <div class="input-div">
+                                       <input type="text" class="input" placeholder="Search by Post Title,Job Id,Recruiter name..."/> 
+
+                                    </div>
+
+                                    <div class="job-status-div">
+                                        <div class="job-status-div-text">
+                                            <p>Hire Request</p>
+
+
+                                        </div>
+                                        <div class="checkbox-div">
+                                            <div class="checkbox-1">
+                                                <div class="checkbox-1-1">
+                                                   <input type="checkbox" class="input-check"/>
+                                                   <p>Active Jobs</p> 
+                                                </div>
+                                                <div class="checkbox-1-count">
+                                                    <i class="fa-solid fa-angle-down" id="job-open"></i>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="show-info-div" id="show-info-div">
+                                                <div class="checkbox-1">
+                                                    <div class="checkbox-1-1">
+                                                       <input type="checkbox" class="input-check"/>
+                                                       <p>Active Jobs</p> 
+                                                    </div>
+                                                    <div class="checkbox-1-count">
+                                                        <i class="fa-solid fa-angle-down"></i>
+                                                    </div>
+                                                </div> 
+
+                                                <div class="checkbox-1">
+                                                    <div class="checkbox-1-1">
+                                                       <input type="checkbox" class="input-check"/>
+                                                       <p>Expired Jobs</p> 
+                                                    </div>
+                                                    <div class="checkbox-1-count">
+                                                        <p>1</p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <div class="checkbox-1">
+                                                <div class="checkbox-1-1">
+                                                   <input type="checkbox" class="input-check"/>
+                                                   <p>Expired Jobs</p> 
+                                                </div>
+                                                <div class="checkbox-1-count">
+                                                    <p>1</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="checkbox-1">
+                                                <div class="checkbox-1-1">
+                                                   <input type="checkbox" class="input-check"/>
+                                                   <p>Closed Jobs</p> 
+                                                </div>
+                                                <div class="checkbox-1-count">
+                                                    <p>2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+                                        
+
+                                    </div>
+
+
+
+
+                                   
+
+
+
+
+                                    
+
+
+
+                                    
+
+                                </form>
+
+                            </div>
+                            
+
+
+
+
+
+
+
+                        </div> -->
+                        <div class="list-right-table"> 
+                            <section class="navigation-header" style="margin-bottom: 15px;">
+                                <div class="navigation-header-1">
+                                    <a class="navigation-header-1-1" href="index.html">Package Details</a>
+                                    <a class="navigation-header-1-1 active" href="subusers.html">Sub Users</a>
+                                    <a class="navigation-header-1-1" href="activities.html">Activities</a>
+                                </div>
+                                <div class="navigation-header-2">
+                                    <div class="navigation-header-input-div">
+                                        <input type="text" placeholder="Search">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    
+                                </div>
+                            </section>
+                            <div class="right-div-table">
+                                <div class="new-hire-request-search">
+                                    <div class="new-hire-request-parent">
+                                        <!-- <div class="new-hire-request-div">
+                                            <p>New Hire Request</p>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                        <div class="dev-text">
+                                            <p>web Developer , support Engineer</p>
+
+                                        </div> -->
+                                        <div class="checkbox-1-table">
+                                            <div class="checkbox-1-1-table">
+                                               <input type="checkbox" class="input-check"/>
+                                               <p>select All</p> 
+                                            </div>
+                                            <!-- <div class="checkbox-1-count-table">
+                                                <button>Delete</button>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    
+
+
+                                    <div class="new-hire-request-parent">
+                                        
+                                        <!-- <div class="navigation-header-input-div-table">
+                                            <input type="text" placeholder="Search" id="book-description-input"/>
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div> -->
+                                        <div class="input-count-btn">
+                                            <!-- <div class="input-count-div">
+                                                <p id="char-count">0/500 char</p>
+                                            </div> -->
+                                            <div class="input-count-btn-div">
+                                                <button>Create new user</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+
+                                
+                                <div class="table-container">
+                                    <table>
+                                      <thead>
+                                        <tr>
+                                          <th>User Name</th>
+                                          <th>Role</th>
+                                          <th>Last Active</th>
+                                          <th>Activities</th>
+                                          <th>Status</th>
+                                          <th>Action</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody id="table-body">
+                                        <tr>
+                                          <td>
+                                            <div class="checkbox-container">
+                                              <input type="checkbox" id="checkbox-1">
+                                              <div>
+                                                <div class="major">Ramesh</div>
+                                                <div class="minor">ramesh.m@placenow.in</div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Recruiter</div>
+                                            </div>
+                                        </td>
+                                          <td>
+                                            <div>
+                                                <div>5 hours ago</div>
+
+                                            </div>
+                                          </td>
+                                          <td class="description" onclick="toggleDescription(this)">
+                                            1. Post web developer vanacy post - Mar. 10
+                                            2. Post web designer vanacy post - Mar. 11
+                                            3. Post App Engineer vanacy post - Mar. 12
+                                            4. Downloaded 10 Candidates Resume - Mar. 19
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Active</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <a href="#" class="action-btn edit-btn">Edit</a>
+                                            <a href="#" class="action-btn delete-btn">Delete</a>
+ 
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="checkbox-container">
+                                              <input type="checkbox" id="checkbox-1">
+                                              <div>
+                                                <div class="major">Suresh</div>
+                                                <div class="minor">suresh.m@placenow.in</div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Hiring Manager</div>
+                                            </div>
+                                        </td>
+                                          <td>
+                                            <div>
+                                                <div>5 hours ago</div>
+
+                                            </div>
+                                          </td>
+                                          <td class="description" onclick="toggleDescription(this)">
+                                            1. Create 10 Hire request - Mar. 10
+                                            2. Close 2 Hire request - Mar. 11
+                                            3. Create 5 Hire request- Mar. 12
+                                            4. Create 4 Hire request - Mar. 19
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Active</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <a href="#" class="action-btn edit-btn">Edit</a>
+                                            <a href="#" class="action-btn delete-btn">Delete</a>
+ 
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="checkbox-container">
+                                              <input type="checkbox" id="checkbox-1">
+                                              <div>
+                                                <div class="major">Sugam</div>
+                                                <div class="minor">sugam.m@placenow.in</div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Admin</div>
+                                            </div>
+                                        </td>
+                                          <td>
+                                            <div>
+                                                <div>5 hours ago</div>
+
+                                            </div>
+                                          </td>
+                                          <td class="description" onclick="toggleDescription(this)">
+                                            1. Create 4 Hire request - Mar. 10
+                                            2. Close 10 Hire request - Mar. 11
+                                            3. Post web developer vanacy post - Mar. 12
+                                            4. Downloaded 10 Candidates Resume - Mar. 19
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Active</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <a href="#" class="action-btn edit-btn">Edit</a>
+                                            <a href="#" class="action-btn delete-btn">Delete</a>
+ 
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="checkbox-container">
+                                              <input type="checkbox" id="checkbox-1">
+                                              <div>
+                                                <div class="major">Gugan</div>
+                                                <div class="minor">gugan.m@placenow.in</div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Recruiter</div>
+                                            </div>
+                                        </td>
+                                          <td>
+                                            <div>
+                                                <div>5 hours ago</div>
+
+                                            </div>
+                                          </td>
+                                          <td class="description" onclick="toggleDescription(this)">
+                                            1. Post web developer vanacy post - Mar. 10
+                                            2. Post web designer vanacy post - Mar. 11
+                                            3. Post App Engineer vanacy post - Mar. 12
+                                            4. Downloaded 10 Candidates Resume - Mar. 19
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Active</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <a href="#" class="action-btn edit-btn">Edit</a>
+                                            <a href="#" class="action-btn delete-btn">Delete</a>
+ 
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="checkbox-container">
+                                              <input type="checkbox" id="checkbox-1">
+                                              <div>
+                                                <div class="major">Kumar</div>
+                                                <div class="minor">kumar.m@placenow.in</div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Recruiter</div>
+                                            </div>
+                                        </td>
+                                          <td>
+                                            <div>
+                                                <div>5 hours ago</div>
+
+                                            </div>
+                                          </td>
+                                          <td class="description" onclick="toggleDescription(this)">
+                                            1. Post web developer vanacy post - Mar. 10
+                                            2. Post web designer vanacy post - Mar. 11
+                                            3. Post App Engineer vanacy post - Mar. 12
+                                            4. Downloaded 10 Candidates Resume - Mar. 19
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Inactive</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <a href="#" class="action-btn edit-btn">Activate</a>
+                                            <a href="#" class="action-btn delete-btn">Delete</a>
+ 
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="checkbox-container">
+                                              <input type="checkbox" id="checkbox-1">
+                                              <div>
+                                                <div class="major">Kumar</div>
+                                                <div class="minor">kumar.m@placenow.in</div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Recruiter</div>
+                                            </div>
+                                        </td>
+                                          <td>
+                                            <div>
+                                                <div>5 hours ago</div>
+
+                                            </div>
+                                          </td>
+                                          <td class="description" onclick="toggleDescription(this)">
+                                            1. Post web developer vanacy post - Mar. 10
+                                            2. Post web designer vanacy post - Mar. 11
+                                            3. Post App Engineer vanacy post - Mar. 12
+                                            4. Downloaded 10 Candidates Resume - Mar. 19
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Inactive</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <a href="#" class="action-btn edit-btn">Activate</a>
+                                            <a href="#" class="action-btn delete-btn">Delete</a>
+ 
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="checkbox-container">
+                                              <input type="checkbox" id="checkbox-1">
+                                              <div>
+                                                <div class="major">Kumar</div>
+                                                <div class="minor">kumar.m@placenow.in</div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Recruiter</div>
+                                            </div>
+                                        </td>
+                                          <td>
+                                            <div>
+                                                <div>5 hours ago</div>
+
+                                            </div>
+                                          </td>
+                                          <td class="description" onclick="toggleDescription(this)">
+                                            1. Post web developer vanacy post - Mar. 10
+                                            2. Post web designer vanacy post - Mar. 11
+                                            3. Post App Engineer vanacy post - Mar. 12
+                                            4. Downloaded 10 Candidates Resume - Mar. 19
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Inactive</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <a href="#" class="action-btn edit-btn">Activate</a>
+                                            <a href="#" class="action-btn delete-btn">Delete</a>
+ 
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="checkbox-container">
+                                              <input type="checkbox" id="checkbox-1">
+                                              <div>
+                                                <div class="major">Kumar</div>
+                                                <div class="minor">kumar.m@placenow.in</div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Recruiter</div>
+                                            </div>
+                                        </td>
+                                          <td>
+                                            <div>
+                                                <div>5 hours ago</div>
+
+                                            </div>
+                                          </td>
+                                          <td class="description" onclick="toggleDescription(this)">
+                                            1. Post web developer vanacy post - Mar. 10
+                                            2. Post web designer vanacy post - Mar. 11
+                                            3. Post App Engineer vanacy post - Mar. 12
+                                            4. Downloaded 10 Candidates Resume - Mar. 19
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Inactive</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <a href="#" class="action-btn edit-btn">Activate</a>
+                                            <a href="#" class="action-btn delete-btn">Delete</a>
+ 
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="checkbox-container">
+                                              <input type="checkbox" id="checkbox-1">
+                                              <div>
+                                                <div class="major">Kumar</div>
+                                                <div class="minor">kumar.m@placenow.in</div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Recruiter</div>
+                                            </div>
+                                        </td>
+                                          <td>
+                                            <div>
+                                                <div>5 hours ago</div>
+
+                                            </div>
+                                          </td>
+                                          <td class="description" onclick="toggleDescription(this)">
+                                            1. Post web developer vanacy post - Mar. 10
+                                            2. Post web designer vanacy post - Mar. 11
+                                            3. Post App Engineer vanacy post - Mar. 12
+                                            4. Downloaded 10 Candidates Resume - Mar. 19
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Inactive</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <a href="#" class="action-btn edit-btn">Activate</a>
+                                            <a href="#" class="action-btn delete-btn">Delete</a>
+ 
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="checkbox-container">
+                                              <input type="checkbox" id="checkbox-1">
+                                              <div>
+                                                <div class="major">Kumar</div>
+                                                <div class="minor">kumar.m@placenow.in</div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Recruiter</div>
+                                            </div>
+                                        </td>
+                                          <td>
+                                            <div>
+                                                <div>5 hours ago</div>
+
+                                            </div>
+                                          </td>
+                                          <td class="description" onclick="toggleDescription(this)">
+                                            1. Post web developer vanacy post - Mar. 10
+                                            2. Post web designer vanacy post - Mar. 11
+                                            3. Post App Engineer vanacy post - Mar. 12
+                                            4. Downloaded 10 Candidates Resume - Mar. 19
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Inactive</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <a href="#" class="action-btn edit-btn">Activate</a>
+                                            <a href="#" class="action-btn delete-btn">Delete</a>
+ 
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <div class="checkbox-container">
+                                              <input type="checkbox" id="checkbox-1">
+                                              <div>
+                                                <div class="major">Kumar</div>
+                                                <div class="minor">kumar.m@placenow.in</div>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Recruiter</div>
+                                            </div>
+                                        </td>
+                                          <td>
+                                            <div>
+                                                <div>5 hours ago</div>
+
+                                            </div>
+                                          </td>
+                                          <td class="description" onclick="toggleDescription(this)">
+                                            1. Post web developer vanacy post - Mar. 10
+                                            2. Post web designer vanacy post - Mar. 11
+                                            3. Post App Engineer vanacy post - Mar. 12
+                                            4. Downloaded 10 Candidates Resume - Mar. 19
+                                          </td>
+                                          <td>
+                                            <div>
+                                                <div>Inactive</div>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <a href="#" class="action-btn edit-btn">Activate</a>
+                                            <a href="#" class="action-btn delete-btn">Delete</a>
+ 
+                                          </td>
+                                        </tr>
+
+
+                                      </tbody>
+                                    </table>
+                                </div>
+
+
+
+
+
+
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    
+                </div>
+
+
+
+                </div>
+
+
+                <!-- changes1 -->
+                <footer class="about">
+                    <div class="about-main">
+                        <div class="company">
+                           <div class="content">
+                                <div class="company-text">
+                                    <p>Company</p>
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="company-text-1">  
+                                    <a>
+                                        About Us
+                                    </a>
+                                    <a>Terms & condition</a>
+                                    <a>Privacy Policy</a>
+                                    <a>Affiliate program</a>
+
+                                </div>
+                           </div> 
+                        </div>
+                        <div class="help">
+                            <div class="content">
+                                <div class="company-text">
+                                    <p>Get Help</p>
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="company-text-1">  
+                                    <a>
+                                        FAQ
+                                    </a>
+                                    <a>Terms & condition</a>
+                                    <a>Report</a>
+
+                                </div>
+                           </div>
+                        </div>
+                        <div class="shop">
+                            <div class="content">
+                                <div class="company-text">
+                                    <p>Our service</p>
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="company-text-1">  
+                                    <a>Job seeking
+                                    </a>
+                                    <a>Smart Searching</a>
+                                    <a>Hiring Process</a>
+                                    <a>Employee payroll</a>
+
+                                </div>
+                           </div>
+                        </div>
+                        <div class="follow">
+                            <div class="content">
+                                <div class="company-text-last">
+                                    <p>Follow us</p>
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="company-text-1-last">  
+                                    <a>
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a><i class="fa-brands fa-instagram"></i></a>
+                                    <a><i class="fa-brands fa-linkedin-in"></i></a>
+
+                                </div>
+                           </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="last-para">
+                        <p>&copy 2025 Placenow Private Limited. All right reserved </p>
+                    </div>
+                </footer>
+                <!-- content endding -->
+            </div>
+                    
+        </div>
+        
+    </div>
+    
+
+    <div class="m1-filter-div" id="m1-filter-div">
+        <div class="m-list-left">
+                            
+            <div class="form">
+                <form method="post" action="#">
+                    <div class="filters-div">
+                        <i class="fa-solid fa-arrow-down-wide-short"></i>
+                        <h1>Filters</h1>
+                        <div class="x-mark" id="x-mark">
+                            <p class="X">X</p>
+                        </div>
+                    </div>
+                    
+                    <div class="input-div">
+                       <input type="text" class="input" placeholder=" Search Title,Job Id..."/> 
+
+                    </div>
+
+                    <div class="job-status-div">
+                        <div class="job-status-div-text">
+                            <p>Job Status</p>
+                            <i class="fa-solid fa-angle-down"></i>
+
+                        </div>
+                        <div class="checkbox-div">
+                            <div class="checkbox-1">
+                                <div class="checkbox-1-1">
+                                   <input type="checkbox" class="input-check"/>
+                                   <p>Active Jobs</p> 
+                                </div>
+                                <div class="checkbox-1-count">
+                                    <p>1</p>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-1">
+                                <div class="checkbox-1-1">
+                                   <input type="checkbox" class="input-check"/>
+                                   <p>Expired Jobs</p> 
+                                </div>
+                                <div class="checkbox-1-count">
+                                    <p>1</p>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-1">
+                                <div class="checkbox-1-1">
+                                   <input type="checkbox" class="input-check"/>
+                                   <p>Closed Jobs</p> 
+                                </div>
+                                <div class="checkbox-1-count">
+                                    <p>2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        
+
+                    </div>
+
+
+
+
+                    <div class="job-status-div-2">
+                        <div class="job-status-div-text">
+                            <p>Job Posted By</p>
+                            <i class="fa-solid fa-angle-down"></i>
+
+                        </div>
+                        <div class="input-div-down">
+                            <input type="text" class="input" placeholder=" Search Title,Job Id..."/> 
+                        </div>
+                        <div class="checkbox-div">
+                            <div class="checkbox-1">
+                                <div class="checkbox-1-1">
+                                   <input type="checkbox" class="input-check"/>
+                                   <p>Recruiter name</p> 
+                                </div>
+                                <div class="checkbox-1-count">
+                                    <p>1</p>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-1">
+                                <div class="checkbox-1-1">
+                                   <input type="checkbox" class="input-check"/>
+                                   <p>Recruiter name</p> 
+                                </div>
+                                <div class="checkbox-1-count">
+                                    <p>1</p>
+                                </div>
+                            </div>
+
+                            <div class="checkbox-1">
+                                <div class="checkbox-1-1">
+                                   <input type="checkbox" class="input-check"/>
+                                   <p>Recruiter name</p> 
+                                </div>
+                                <div class="checkbox-1-count">
+                                    <p>2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        
+
+                    </div>
+
+
+
+
+                    <div class="job-status-div-3">
+                        <div class="job-status-div-text">
+                            <p>Job Tittle</p>
+                            <i class="fa-solid fa-angle-down"></i>
+
+                        </div>
+                        <div class="input-div-down">
+                            <input type="text" class="input" placeholder=" Search Title,Job Id..."/> 
+                        </div>
+                        <div class="checkbox-div">
+                            <div class="checkbox-1">
+                                <div class="checkbox-1-1">
+                                   <input type="checkbox" class="input-check"/>
+                                   <p>App developer</p> 
+                                </div>
+                                <div class="checkbox-1-count">
+                                    <p>1</p>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+
+
+
+
+
+                        
+
+                    </div>
+
+
+
+                    
+
+                </form>
+
+            </div>
+            
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+    
+    
+</body>
+</html>
